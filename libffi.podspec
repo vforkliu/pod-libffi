@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'JUN LIU' => 'vforkliu@gmail.com' }
 
-  s.platform     = :ios, '11.0'
+  s.platform     = :ios, '12.0'
   s.source       = { :git => 'https://github.com/vforkliu/pod-libffi.git', :tag => s.version.to_s }
 
   s.source_files = 'include/**/*.h'
@@ -17,4 +17,9 @@ Pod::Spec.new do |s|
   s.header_mappings_dir = 'include'
 
   s.requires_arc = false
+  s.pod_target_xcconfig = {
+    'SWIFT_VERSION' => '5.0',
+    'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
+  }
+
 end
