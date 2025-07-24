@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'libffi'
+  s.name         = 'zlibffi'
   s.version      = '3.5.1'
   s.summary      = 'Precompiled libffi 3.5.1 for iOS.'
   s.description  = 'libffi 3.5.1 built for iOS as a static library, packaged for Swift/ObjC usage.'
